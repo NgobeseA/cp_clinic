@@ -1,0 +1,7 @@
+clinic/
+db.sqlite3
+node_modules/
+
+manage.py
+*.pyc
+*.pyo
