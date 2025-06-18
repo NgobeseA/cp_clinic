@@ -1,4 +1,5 @@
 clinic/
+cp_clinic/
 db.sqlite3
 node_modules/
 
