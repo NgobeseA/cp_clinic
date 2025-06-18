@@ -68,5 +68,3 @@ This project is a simple clinic appointment management system built with Django.
 - Make sure to install any additional dependencies as needed.
 
 ---
-
-Feel free to further customize this README for your specific project details.
