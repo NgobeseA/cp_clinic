@@ -1,8 +1,9 @@
 from django.db import models
 from patients.models import Patient
 from doctor.models import Doctor
+import csv 
 
-# Create your models here.
+
 class ClinicBranch(models.Model):
     branch_name = models.CharField(max_length=50)
     unit_address = models.CharField(max_length=10)
@@ -26,3 +27,7 @@ class Appointment(models.Model):
     appointment_time = models.TimeField()
     arrival_time = models.TimeField()
 
+class Prescription(models.Model):
+    appointment = models.ForeignKey(Appointment, on_delete=models.CASCADE)
+    date_time = models.DateTimeField(auto_now_add=True)
+    medication = models.CharField(max_length=100)
